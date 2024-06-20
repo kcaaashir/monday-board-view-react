@@ -1,45 +1,63 @@
-## Overview
-This is the "Quickstart React" example Monday app. 
-<br>It can be used as a board view or dashboard widget, connected to a board and render data from the board using settings.
+# Duplicate Monitor Settings
 
-<br>This app demonstrates how to use: 
-- [settings](https://github.com/mondaycom/monday-sdk-js#mondaygettype-params--) 
-- [context](https://github.com/mondaycom/monday-sdk-js#mondaygettype-params--) 
-- [API](https://github.com/mondaycom/monday-sdk-js#mondayapiquery-options--)
+This project is a web application to monitor and handle duplicate items in a Monday.com board.
 
-<br>You can find more info in our QuickStart guide [here](https://monday.com/developers/apps/quickstart-view/)
-<br /> ![Screenshot](https://dapulse-res.cloudinary.com/image/upload/w_900/v1591485466/remote_mondaycom_static/developers/screenshots/final_view.gif)
+## Getting Started
 
-## Run the project
+These instructions will help you set up the project on your local machine.
 
-In the project directory, you should run:
+### Prerequisites
 
-### `npm install`
+Make sure you have Node.js and npm installed on your machine.
 
-And then to run an application with the monday tunnel, run:
+### Installation
 
-### `npm start`
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
+    ```
 
-Find the provided URL in your terminal. This is your public URL, and you can use it to test your application.
-Example: https://abcd12345.apps-tunnel.monday.com
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-## Configure Monday App 
+### Running the Application
 
-1. Open monday.com, login to your account and go to a "Developers" section.
-2. Create a new "QuickStart View Example App"
-3. Open "OAuth & Permissions" section and add "boards:read" scope
-4. Open "Features" section and create a new "Boards View" feature
-5. Open "View setup" tab and fulfill in "Custom URL" field your monday tunnel public URL, which you got previously (example: https://abcd12345.apps-tunnel.monday.com)
-6. Click "Boards" button and choose one of the boards with some data in it.
-7. Click "Preview button"
-8. Enjoy the Quickstart View Example app!
+1. Start the application:
+    ```bash
+    npm start
+    ```
 
-## Release your app
-1. Run script
-### `npm run build`
-2. Zip your "./build" folder
-3. Open "Build" tab in your Feature
-4. Click "New Build" button
-5. Click "Upload" radio button and upload zip file with your build
-6. Go to any board and add your just released view
-7. Enjoy!
+2. After starting the application, get the tunnel URL provided by your terminal if not tunnel using mapps. 
+
+3. Go to your Monday.com account and navigate to hosting the `Build` section in the developer settings.
+
+4. Create a new feature or update an existing feature with the tunnel URL to host the application.
+
+### Usage
+
+1. After setting up the tunnel URL in Monday.com, you can start using the Duplicate Monitor Settings app in your Monday.com account.
+
+2. Select the columns you want to monitor for duplicates and set the action to perform when duplicates are found.
+
+3. Save the settings and the app will automatically monitor for duplicates and perform the configured actions.
+
+### Built With
+
+- React
+- Monday.com SDK
+- monday-ui-react-core
+
+### Contributing
+
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/my-new-feature`.
+3. Commit your changes: `git commit -am 'Add some feature'`.
+4. Push to the branch: `git push origin feature/my-new-feature`.
+5. Submit a pull request.
+
+### Acknowledgments
+
+- Thanks to the Monday.com team for their SDK and UI components.
